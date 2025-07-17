@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flash.io</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts/script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div id="header__logo"></div>
+      <nav class="header__nav">
+        <div class="nav__items">
+          <button class="button button--primary" id="nav__set-create-button">Create Set</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="dashboard">
+      <section class="dashboard__card-grid">
+        
+      </section>
+      <section class="template">
+        <template class="template__card-deck">
+            <div class="card-deck">
+              <div class="container">
+              <div class="card-deck__title">Lorem ipsum dolor sit amet.</div>
+              <button class="card-deck__create-button">add</button>
+              </div>
+              <div class="card-list"></div>
+            </div>
+         </template>
+          <template class="template__card">
+          <div class="card">
+            <button class="card__delete" title="Delete Card">&times;</button>
+            <div class="card__title"></div>
+            <div class="card__description"></div>
+          </div>
+        </template>
+        <template class="template__input__card-deck">
+            <div class="input-window">
+              <h1> Add new Subject!!!</h1>
+              <label for="input__card-deck__title">Card-set Name:</label>
+              <input type="text" name="input__card-deck__title" id="input__card-deck__title">
+              <button class="button--primary" id="input__card-deck__create-button">New Set</button>
+            </div>
+        </template>
+        <template class="template__input__card">
+          <div class="input-window">
+            <h1>Create new Flash!!!</h1>
+            <label for="input__card__title">Question:</label>
+            <input type="text" name="input__card__title" id="input__card__title">
+            <lable for="input__card__description">Answer:</lable>
+            <input type="text" name="card__description" id="input__card__description">
+            <button class="button--primary" id="input__card__create-button">Add Flash</button>
+          </div>
+        </template>
+      </section>
+    </main>
+  </body>
+</html>
