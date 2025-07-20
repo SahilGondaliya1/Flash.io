@@ -71,6 +71,7 @@ body {
   color: #fff;
   font-weight: 600;
   box-shadow: 0 2px 8px rgba(79, 140, 255, 0.12);
+  padding: 0.4rem 1.2rem;
 }
 .button--primary:hover {
   background: #2563eb;
@@ -85,8 +86,8 @@ body {
 /* Dashboard grid layout */
 .dashboard__card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1rem));
+  gap: 1rem;
   justify-items: start;
   align-items: start;
   margin-top: 2rem;
