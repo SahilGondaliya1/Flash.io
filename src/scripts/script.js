@@ -145,6 +145,16 @@ const renderCard = (deckID,cardObj) => {
    card.id = cardObj.id;
    card.querySelector('.card__title').textContent= cardObj.title;
    card.querySelector('.card__description').textContent = cardObj.description;
+   
+   // Add delete button event listener
+   card.querySelector('.card__delete').addEventListener('click', () => {
+      const cardDeck = state.cardsets.find(cs => cs.id === deckID);
+      if(cardDeck) {
+         cardDeck.cards = cardDeck.cards.filter(c => c.id !== cardObj.id);
+      }
+      card.remove();
+   });
+   
    const deck = document.querySelector(`#${deckID}`);
    const cardList = deck.querySelector('.card-list');
    cardList.appendChild(card);
